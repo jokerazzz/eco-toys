@@ -108,7 +108,7 @@ body {
 
 .header__menu {
     background: #718E54;
-    padding: 21px 0;
+    
     z-index: 10;
 }
 
@@ -116,6 +116,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 21px 0;
 }
 
 .menu ul {
@@ -145,6 +146,7 @@ body {
 .menu span a + a {
     margin-left: 24px;
 }
+
 
 
 
@@ -844,6 +846,104 @@ footer {
     border-right: none;
     
 }
+
+.cart-icon {
+    transition: all .3s;
+}
+
+.cart-hover {
+    background-color: #fff;
+    max-width: 567px;
+    padding: 0px 20px;
+    box-shadow: 10px 9px 24px rgba(0, 0, 0, 0.22);
+    border-radius: 25px;    
+    position: absolute;
+    z-index: 50;
+    width: 100%;
+    right: 205px;
+    top: 230px;
+    height: 0;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+.cart-icon:hover .cart-hover::after {
+    content: '';
+    background-image: url(../images/cart-hover.png);
+    width: 65px;
+    height: 78px;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    top: -50px;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-width: 0 0 65px 65px;
+    border-color: transparent transparent #f7fbff transparent;
+}
+
+.cart-icon:hover .cart-hover {
+    height: auto;
+    padding: 17px 20px;
+    overflow: visible;
+}
+
+.cart-hover .cart__item {
+    padding: 21px 10px 10px !important;
+    justify-content: space-between;
+}
+
+.cart-hover .cart__item .cart-num {
+    font-size: 20px !important;
+    height: 24px;
+    width: 24px;
+    margin-right: 5px;
+}
+
+.cart-hover .title{
+    font-size: 44px;
+}
+
+.cart-hover .cart__item-title {
+    font-size: 20px;
+}
+
+.cart-hover .cart__item .cart-img {
+    width: 123px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    height: auto;
+}
+
+.cart-hover .cart__info span:nth-child(2) {
+    margin-bottom: 10px;    
+    font-size: 15px;
+}
+
+.cart-hover .cart__item .cart-img img {
+    width: 100%;
+}
+
+.cart-hover .cart__count {
+    flex-direction: inherit;
+    margin-bottom: 0;
+}
+
+.cart-hover .cart__count .price {
+    font-size: 29px;
+    margin-left: 10px;
+}
+
+.cart-hover .cart__count .number {
+    font-size: 21px;
+    
+}
+
+
+
+
 
 
 

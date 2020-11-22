@@ -12,18 +12,10 @@ $('.arrow').on('click', function(){
   $('.row__info-add').toggleClass('active');
 });
 
+// $('.arrow').on('click', function(){
+//   $(this).addClass('active').siblings().removeClass('active');
+//   });
 
-// let num = 0,
-//      elements = $(".info-add-name", ".row__info-total", ".row__info-deliver", ".row__info-add");
-
-// $(".arrow").on("click", ( ) => {
-//   for(let i = 0; i < elements.length, i++){
-//   elements[i].removeClass("active"),
-//   elements[ num ].addClass("active"),
-//   num++
-// }
-// }
-// })
 
 
 
