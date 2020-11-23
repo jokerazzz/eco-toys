@@ -24,6 +24,10 @@
                     </form>
                     <a href="tel:7960303030">+ 7 (960) 30 30 30 </a>
                     <span><a href="#"><img src="images/instagram.png" alt=""></a></span>
+                    <a class="mobile-icon" href="accaunt.html" style="display: none;"><img src="images/user-mob.png"
+                            alt=""></a>
+                    <a class="cart-icon mobile-icon" href="cart.html" style="display: none;"><img
+                            src="images/cart-mob.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -31,7 +35,33 @@
     <div class="header__menu">
         <div class="container">
             <nav class="menu">
-                <ul>
+                <div class="mobile-nav-title" style="display: none;">
+                    <span class="btn-catalog">Каталог</span>
+                    <ul class="catalog__list mobile-catalog">
+                        <li><a href="#">Подарочные наборы</a></li>
+                        <li><a href="#">Погремушки и грызунки</a></li>
+                        <li><a href="#">Машинки</a></li>
+                        <li><a href="#">Пирамидки</a></li>
+                        <li><a href="#">Тактильные игрушки</a></li>
+                        <li><a href="#">Поезда</a></li>
+                        <li><a href="#">Шнуровки</a></li>
+                        <li><a href="#">Вязаные куклы</a></li>
+                        <li><a href="#">Развивающие игрушки</a></li>
+                        <li><a href="#">Пальчиковые игрушки</a></li>
+                        <li><a href="#">Каталки</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Ручная работа</a></li>
+                        <li><a href="#">Хит</a></li>
+                        <li><a href="#">Новинки</a></li>
+
+                    </ul>
+                </div>
+                <div class="btn-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="mob-menu">
                     <li><a href="index.html">Главная</a></li>
                     <li><a href="catalog.html">Каталог</a></li>
                     <li><a href="about.html">О нас</a></li>
@@ -39,6 +69,7 @@
                     <li><a href="reviwes.html">Отзывы</a></li>
                     <li><a href="blog.html">Блог</a></li>
                     <li><a href="contact.html">Контакты</a></li>
+                    <li style="display: none;"><a href="#"><img src="images/insta.png" alt=""></a></li>
                 </ul>
                 <span>
                     <a href="accaunt.html"><img src="images/user.png" alt=""></a>
@@ -111,7 +142,8 @@
         <span class="star4"></span>
         <div class="container">
             <div class="catalog__inner">
-                <aside>
+                <div class="aside__list" style="display: none;">Пирамидки</div>
+                <aside class="aside_top">
                     <h5>Категории товаров</h5>
                     <ul class="catalog__list">
                         <li><a href="#">Подарочные наборы</a></li>
@@ -274,12 +306,12 @@
             </div>
         </div>
     </main>
-    <div class="new">
+    <div class="new new2">
         <div class="container">
             <div class="title">Вам может понравиться </div>
             <div class="new__inner">
                 <div class="new__container">
-                    <div class="new__slide">
+                    <div class="new__slide new__slide2">
                         <span class="marker">NEW</span>
                         <div class="new__slide-img">
                             <img src="images/main/new1.png" alt="">
@@ -288,7 +320,7 @@
                         <span>680 ₽</span>
                         <button class="btn" type="button">В корзину</button>
                     </div>
-                    <div class="new__slide">
+                    <div class="new__slide new__slide2">
                         <span class="marker">NEW</span>
                         <div class="new__slide-img">
                             <img src="images/main/new1.png" alt="">
@@ -297,7 +329,7 @@
                         <span>680 ₽</span>
                         <button class="btn" type="button">В корзину</button>
                     </div>
-                    <div class="new__slide">
+                    <div class="new__slide new__slide2">
                         <span class="marker">NEW</span>
                         <div class="new__slide-img">
                             <img src="images/main/new1.png" alt="">
@@ -306,7 +338,7 @@
                         <span>680 ₽</span>
                         <button class="btn" type="button">В корзину</button>
                     </div>
-                    <div class="new__slide">
+                    <div class="new__slide new__slide2">
                         <span class="marker">NEW</span>
                         <div class="new__slide-img">
                             <img src="images/main/new1.png" alt="">
@@ -315,7 +347,7 @@
                         <span>680 ₽</span>
                         <button class="btn" type="button">В корзину</button>
                     </div>
-                    <div class="new__slide">
+                    <div class="new__slide new__slide2">
                         <span class="marker">NEW</span>
                         <div class="new__slide-img">
                             <img src="images/main/new1.png" alt="">
@@ -331,13 +363,14 @@
     </div>
 
 
+    
     <footer>
         <div class="container">
             <div class="footer__inner">
                 <div class="footel__left">
                     <div class="logo"><img src="images/logo.png" alt=""></div>
                     <span>Магазин экоигрушек ООО ”Toys’я’us”</span>
-                    <span>
+                    <span class="f-social">
                         <a href="#"><img src="images/instagram.png" alt=""></a>
                         <a href="#"><img src="images/vk.png" alt=""></a>
                     </span>
@@ -389,7 +422,7 @@
                 </div>
                 <div class="footer__link">
                     <h5>Способы оплаты</h5>
-                    <ul>
+                    <ul class="f-social">
                         <li><a href="#"><img src="images/mir.png" alt=""></a></li>
                         <li><a href="#"><img src="images/visa.png" alt=""></a></li>
                         <li><a href="#"><img src="images/master.png" alt=""></a></li>

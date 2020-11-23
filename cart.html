@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -22,6 +24,10 @@
                     </form>
                     <a href="tel:7960303030">+ 7 (960) 30 30 30 </a>
                     <span><a href="#"><img src="images/instagram.png" alt=""></a></span>
+                    <a class="mobile-icon" href="accaunt.html" style="display: none;"><img src="images/user-mob.png"
+                            alt=""></a>
+                    <a class="cart-icon mobile-icon" href="cart.html" style="display: none;"><img
+                            src="images/cart-mob.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -29,7 +35,33 @@
     <div class="header__menu">
         <div class="container">
             <nav class="menu">
-                <ul>
+                <div class="mobile-nav-title" style="display: none;">
+                    <span class="btn-catalog">Каталог</span>
+                    <ul class="catalog__list mobile-catalog">
+                        <li><a href="#">Подарочные наборы</a></li>
+                        <li><a href="#">Погремушки и грызунки</a></li>
+                        <li><a href="#">Машинки</a></li>
+                        <li><a href="#">Пирамидки</a></li>
+                        <li><a href="#">Тактильные игрушки</a></li>
+                        <li><a href="#">Поезда</a></li>
+                        <li><a href="#">Шнуровки</a></li>
+                        <li><a href="#">Вязаные куклы</a></li>
+                        <li><a href="#">Развивающие игрушки</a></li>
+                        <li><a href="#">Пальчиковые игрушки</a></li>
+                        <li><a href="#">Каталки</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Ручная работа</a></li>
+                        <li><a href="#">Хит</a></li>
+                        <li><a href="#">Новинки</a></li>
+
+                    </ul>
+                </div>
+                <div class="btn-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="mob-menu">
                     <li><a href="index.html">Главная</a></li>
                     <li><a href="catalog.html">Каталог</a></li>
                     <li><a href="about.html">О нас</a></li>
@@ -37,6 +69,7 @@
                     <li><a href="reviwes.html">Отзывы</a></li>
                     <li><a href="blog.html">Блог</a></li>
                     <li><a href="contact.html">Контакты</a></li>
+                    <li style="display: none;"><a href="#"><img src="images/insta.png" alt=""></a></li>
                 </ul>
                 <span>
                     <a href="accaunt.html"><img src="images/user.png" alt=""></a>
@@ -121,60 +154,69 @@
                     <div class="cart-img">
                         <img src="images/cart/item1.png" alt="">
                     </div>
-                    <div class="cart__info">
-                        <div class="cart__item-title">Погремушка-грызунок Рыбка</div>
-                        <span>Артикул 05002</span>
-                        <span>Размер - 20*10*6 см</span>
-                        <span>Древесина бука и липы</span>
-                    </div>
-                    <div class="cart__count">
-                        <input class="number" type="number" value="1" name="" id="">
-                        <div class="counter">
-                            <span class="num">1</span> х
-                            <span>520 ₽</span> 
+                    <div class="wrap">
+                        <div class="cart__info">
+                            <div class="cart__item-title">Погремушка-грызунок Рыбка</div>
+                            <span>Артикул 05002</span>
+                            <span>Размер - 20*10*6 см</span>
+                            <span>Древесина бука и липы</span>
                         </div>
-                        <div class="price">520 ₽</div>
+                        <div class="cart__count">
+                            <input class="number" type="number" value="1" name="" id="">
+                            <div class="counter">
+                                <span class="num">1</span> х
+                                <span>520 ₽</span>
+                            </div>
+                            <div class="price">520 ₽</div>
+                        </div>
                     </div>
+
                 </div>
                 <div class="cart__item">
                     <div class="cart-num">2</div>
                     <div class="cart-img">
                         <img src="images/cart/item2.png" alt="">
                     </div>
-                    <div class="cart__info">
-                        <div class="cart__item-title">Деревянный домик Семья</div>
-                        <span>Артикул 05002</span>
-                        <span>Размер - 20*10*6 см</span>
-                        <span>Древесина бука и липы</span>
-                    </div>
-                    <div class="cart__count">
-                        <input class="number" type="number" value="1" name="" id="">
-                        <div class="counter">
-                            <span class="num">1</span> х
-                            <span>2530 ₽</span> 
+                    <div class="wrap">
+                        <div class="cart__info">
+                            <div class="cart__item-title">Деревянный домик Семья</div>
+                            <span>Артикул 05002</span>
+                            <span>Размер - 20*10*6 см</span>
+                            <span>Древесина бука и липы</span>
                         </div>
-                        <div class="price">2530 ₽</div>
+                        <div class="cart__count">
+                            <input class="number" type="number" value="1" name="" id="">
+                            <div class="counter">
+                                <span class="num">1</span> х
+                                <span>2530 ₽</span>
+                            </div>
+                            <div class="price">2530 ₽</div>
+                        </div>
                     </div>
+
                 </div>
                 <div class="cart__item">
                     <div class="cart-num">3</div>
                     <div class="cart-img">
                         <img src="images/cart/item1.png" alt="">
                     </div>
-                    <div class="cart__info">
-                        <div class="cart__item-title">Деревянный домик Семья</div>
-                        <span>Артикул 05002</span>
-                        <span>Размер - 20*10*6 см</span>
-                        <span>Древесина бука и липы</span>
-                    </div>
-                    <div class="cart__count">
-                        <input class="number" type="number" value="1" name="" id="">
-                        <div class="counter">
-                            <span class="num">2</span> х
-                            <span>520 ₽</span> 
+                    <div class="wrap">
+                        <div class="cart__info">
+                            <div class="cart__item-title">Деревянный домик Семья</div>
+                            <span>Артикул 05002</span>
+                            <span>Размер - 20*10*6 см</span>
+                            <span>Древесина бука и липы</span>
                         </div>
-                        <div class="price">1040 ₽</div>
+                        <div class="cart__count">
+                            <input class="number" type="number" value="1" name="" id="">
+                            <div class="counter">
+                                <span class="num">2</span> х
+                                <span>520 ₽</span>
+                            </div>
+                            <div class="price">1040 ₽</div>
+                        </div>
                     </div>
+
                 </div>
                 <div class="cart__bottom">
                     <div class="cart__bottom-left">
@@ -191,7 +233,7 @@
                     </div>
                 </div>
 
-                
+
 
                 <div class="order__inner">
                     <h3>Оформление заказа</h3>
@@ -237,7 +279,7 @@
                         <label for="to-3">Доставка по миру</label>
                     </div>
                     <div class="total__order">
-                        <span>Состав заказа:</span>
+                        <span class="total__order-title">Состав заказа:</span>
                         <ul>
                             <li>1. Погремушка-грызунок Рыбка х 1 <span>520 ₽</span> </li>
                             <li>2. Деревянный домик Семья х 1 <span>2530 ₽</span> </li>
@@ -263,7 +305,7 @@
                 <div class="footel__left">
                     <div class="logo"><img src="images/logo.png" alt=""></div>
                     <span>Магазин экоигрушек ООО ”Toys’я’us”</span>
-                    <span>
+                    <span class="f-social">
                         <a href="#"><img src="images/instagram.png" alt=""></a>
                         <a href="#"><img src="images/vk.png" alt=""></a>
                     </span>
@@ -305,17 +347,17 @@
                     <h5>Контакты</h5>
                     <ul>
                         <li><a href="#">Москва, м. Бабушкинская
-                            ул. Чичерина, д. 8, корп. 1.</a></li>
+                                ул. Чичерина, д. 8, корп. 1.</a></li>
                         <li><a href="#">Пн-Пт 10:00-20:00</a></li>
                         <li><a href="#">Сб-Вс 10:00-18:00</a></li>
                         <li><a href="tel:74957990181">+7 (495) 799-01-81</a></li>
                         <li><a href="mailto:eco-igrushka.ru@yandex.ru">eco-igrushka.ru@yandex.ru</a></li>
-                        
+
                     </ul>
                 </div>
                 <div class="footer__link">
                     <h5>Способы оплаты</h5>
-                    <ul>
+                    <ul class="f-social">
                         <li><a href="#"><img src="images/mir.png" alt=""></a></li>
                         <li><a href="#"><img src="images/visa.png" alt=""></a></li>
                         <li><a href="#"><img src="images/master.png" alt=""></a></li>
@@ -323,13 +365,14 @@
                 </div>
                 <button class="f-btn" type="button">Ответим на ваш вопрос</button>
             </div>
-            
+
         </div>
     </footer>
-   
+
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="js/test.js"></script>
     <script src="js/jquery.nice-number.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
