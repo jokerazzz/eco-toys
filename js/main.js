@@ -23,6 +23,14 @@ $('.filter__price-title').on('click', function(){
   $('.range-form').toggleClass('active');
 });
 
+$('.btn-menu').on('click', function(){
+  $('.mob-menu').toggleClass('active');
+});
+
+$('.btn-catalog').on('click', function(){
+  $('.mobile-catalog').toggleClass('active');
+});
+
 
 $(function(){
   $('input[type="number"]').niceNumber();

@@ -117,6 +117,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 21px 0;
+    position: relative;
 }
 
 .menu ul {
@@ -147,7 +148,23 @@ body {
     margin-left: 24px;
 }
 
+.btn-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    display: none;
+}
 
+.btn-menu span {
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    
+    margin: 6px 0;
+    display: inline-block;
+}
 
 
 
@@ -860,8 +877,8 @@ footer {
     position: absolute;
     z-index: 50;
     width: 100%;
-    right: 205px;
-    top: 230px;
+    right: 10px;
+    top: 120px;
     height: 0;
     overflow: hidden;
     transition: all .3s;
@@ -2565,4 +2582,145 @@ aside h5 {
 
   .login__inner2 .login {
       margin-right: 10px;
+  }
+
+
+
+
+
+
+
+
+  @media (max-width: 1200px) {
+    main .star1:nth-child(1){
+        left: 0;
+    }
+    main .star2:nth-child(2){
+        left: 5%;
+    }
+    main .star4 {
+        right: 0;
+    }
+    main .star3:nth-child(3) {
+        right: 5%;
+    }
+    .menu ul li a {
+        margin-right: 20px;
+    }
+  }
+
+
+  @media (max-width: 1100px) {
+    main .star1:nth-child(1){
+        display: none;
+    }
+    main .star2:nth-child(2){
+        display: none;
+    }
+    main .star4 {
+        display: none;
+    }
+    main .star3:nth-child(3) {
+        display: none;
+    }
+    .logo-title {
+        display: none;
+    }
+  }
+
+  @media (max-width: 950px) {
+    .header__right a {
+        display: none;
+    }
+    .mobile-icon {
+        display: block !important;
+    }
+    .menu span{
+        display: none !important;
+    }
+    .menu ul {
+        position: absolute;
+        flex-direction: column;
+        padding: 0;
+        background: #718E54;
+        box-shadow: 10px 8px 24px rgba(0, 0, 0, 0.17);
+        max-width: 315px;
+        width: 100%;
+        right: -15px;
+        top: 74px;
+        z-index: 50;
+        height: 0;
+        transition: all .3s;
+        overflow: hidden;
+    }
+
+    .menu ul li {
+        padding: 0px 20px;
+        text-align: right;
+        margin-bottom: 5px;
+        transition: all .3s;
+        width: 100%;
+    }
+    
+    .menu ul.active {
+        overflow: visible;
+        padding: 20px 0;
+        height: 100vh;
+    }
+
+    .menu ul.active li {
+        padding: 10px 20px;
+    }
+
+    .menu ul li a {
+        color: #fff;
+        text-align: right;
+        width: 100%;
+    }
+    .btn-menu {
+        display: flex !important;
+    }
+    .btn-menu span {
+        display: inline-block !important;
+    }
+
+    .mobile-nav-title {
+        display: block !important;
+    }
+
+    .mobile-nav-title span{
+        display: block !important;
+        font-size: 26px;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .mobile-catalog {
+        position: absolute;
+        background: #718E54;
+        box-shadow: 10px 8px 24px rgba(0, 0, 0, 0.17);
+        left: -15px;
+    }
+    .mobile-catalog li {
+        width: 100%;
+        
+    }
+    .mobile-catalog li a {
+        width: 100%;
+        text-align: left !important;
+        font-size: 20px !important;
+        margin-bottom: 0 !important;
+    }
+    .mob-menu li:last-child{
+        display: block !important;
+    }
+    .slide {
+        width: 500px !important;
+    }
+    .slide img {
+        height: auto;
+    }
+    .slider__container {
+        height: 310px;
+    }
   }
