@@ -69,7 +69,7 @@ $('.slider__container').slick({
 });
 
 $('.new__container').slick({
-  slidesToShow:4,
+  slidesToShow:2,
   slidesToScroll:1,
   prevArrow:'<button class="slick-prev" type="button"><img src="images/main/arrow-white-left.png" alt=""></button>',
   nextArrow:'<button class="slick-next" type="button"><img src="images/main/arrow-white-right.png" alt=""></button>',
@@ -78,9 +78,9 @@ $('.new__container').slick({
     {
       breakpoint: 990,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
-        // centerMode: true,
+        centerMode: true,
       }
     },
     {
@@ -88,7 +88,7 @@ $('.new__container').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        centerMode: true
+        // centerMode: true
       }
     }
   ]
