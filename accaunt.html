@@ -24,8 +24,10 @@
                     </form>
                     <a href="tel:7960303030">+ 7 (960) 30 30 30 </a>
                     <span><a href="#"><img src="images/instagram.png" alt=""></a></span>
-                    <a class="mobile-icon" href="accaunt.html" style="display: none;"><img src="images/user-mob.png" alt=""></a>
-                    <a class="cart-icon mobile-icon" href="cart.html" style="display: none;"><img src="images/cart-mob.png" alt=""></a>
+                    <a class="mobile-icon" href="accaunt.html" style="display: none;"><img src="images/user-mob.png"
+                            alt=""></a>
+                    <a class="cart-icon mobile-icon" href="cart.html" style="display: none;"><img
+                            src="images/cart-mob.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -51,7 +53,7 @@
                         <li><a href="#">Ручная работа</a></li>
                         <li><a href="#">Хит</a></li>
                         <li><a href="#">Новинки</a></li>
-                        
+
                     </ul>
                 </div>
                 <div class="btn-menu">
@@ -141,7 +143,7 @@
         <div class="container">
             <div class="accaunt__inner">
                 <div class="tabs">
-                    <div class="tab-header">
+                    <div class="tab-header tab-header-hide">
                         <div class="user">
                             <div class="user__img">
                                 <img src="images/accaunt/user.png" alt="">
@@ -165,7 +167,7 @@
                     <div class="tab-content">
 
                         <div class="content__block block-1 active">
-                            <h4>Личные данные</h4>
+                            <h4 class="hide-head">Личные данные</h4>
                             <form action="">
                                 <input type="text" placeholder="ФИО*">
                                 <input type="text" placeholder="E-mail">
@@ -177,7 +179,7 @@
                         </div>
 
                         <div class="content__block block-2">
-                            <h4>История заказов</h4>
+                            <h4 class="hide-head">История заказов</h4>
                             <div class="info">
                                 <div class="info__title">
                                     <div class="col-title">№ заказа </div>
@@ -188,13 +190,13 @@
                                 </div>
                                 <div class="row">
                                     <div class="row__info">
-                                        <span class="arrow">№125</span>
+                                        <span class="arrow arrow1">№125</span>
                                         <span>14.09.2020 г.</span>
                                         <span>2 шт.</span>
                                         <span>2 150 ₽</span>
                                         <span>Оплачен Выполнен</span>
                                     </div>
-                                    <div class="row__info-add">
+                                    <div class="row__info-add" id="show1">
                                         <div class="info-add-name">
                                             <span>Товар</span>
                                             <p>
@@ -226,13 +228,13 @@
                                 </div>
                                 <div class="row">
                                     <div class="row__info">
-                                        <span class="arrow">№125</span>
+                                        <span class="arrow arrow2">№125</span>
                                         <span>14.09.2020 г.</span>
                                         <span>2 шт.</span>
                                         <span>2 150 ₽</span>
                                         <span>Оплачен Выполнен</span>
                                     </div>
-                                    <div class="row__info-add">
+                                    <div class="row__info-add" id="show2">
                                         <div class="info-add-name">
                                             <span>Товар</span>
                                             <p>
@@ -264,13 +266,13 @@
                                 </div>
                                 <div class="row">
                                     <div class="row__info">
-                                        <span class="arrow">№125</span>
+                                        <span class="arrow arrow3">№125</span>
                                         <span>14.09.2020 г.</span>
                                         <span>2 шт.</span>
                                         <span>2 150 ₽</span>
                                         <span>Оплачен Выполнен</span>
                                     </div>
-                                    <div class="row__info-add">
+                                    <div class="row__info-add" id="show3">
                                         <div class="info-add-name">
                                             <span>Товар</span>
                                             <p>
@@ -311,20 +313,38 @@
                                 atque vero ea perferendis consectetur veritatis.</p>
                         </div>
 
-                        <div class="content__block">
-                            <i class="fa fa-envelope"></i>
-                            <h2>This is contact section</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam
-                                officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum laborum
-                                atque vero ea perferendis consectetur veritatis.</p>
-                        </div>
+                        
 
+                    </div>
+                </div>
+                <div class="tabs tabs-main-mobile tabs-main-mobile-x" style="display: none;">
+                    <div class="tab-header ">
+                        <div class="user">
+                            <div class="user__img">
+                                <img src="images/accaunt/user.png" alt="">
+                            </div>
+                            <div class="user__info">
+                                <div class="user__name">Анастасия</div>
+                                <span>naskr4317@yandex.ru</span>
+                            </div>
+                        </div>
+                        <div class="tab__link active">
+                           <a href="personal-info.html">Личный данные</a> 
+                        </div>
+                        <div class="tab__link">
+                           <a href="story-order.html">История заказов</a> 
+                        </div>
+                        <div class="tab__link">
+                           <a href="personal-bonuse.html"> Мои бонусы</a>
+                        </div>
+                        <div class="logout"><a href="#">Выйти</a></div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
+    
     <footer>
         <div class="container">
             <div class="footer__inner">
@@ -393,7 +413,9 @@
             </div>
 
         </div>
-    </footer> 
+    </footer>
+
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="js/jquery.nice-number.js"></script>

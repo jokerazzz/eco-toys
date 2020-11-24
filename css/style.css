@@ -1308,6 +1308,7 @@ footer {
 
 .wrap {
     display: flex;
+    width: 100%;
 }
 
 /* END CONTACT */

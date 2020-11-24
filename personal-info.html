@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ЭКО - игрушки</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/jquery.nice-number.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -137,34 +139,30 @@
         </div>
 
     </div>
-    <main>
+    <main class="main main5">
         <span class="star1"></span>
-        <span class="star2"></span>
-        <span class="star3"></span>
         <span class="star4"></span>
         <div class="container">
-            <div class="login__inner">
-                <div class="login">
-                    <h3>Войти на сайт </h3>
-                    <p>Чтобы войти на сайт введите e-mail и пароль</p>
-                    <form action="">
-                        <input type="text" placeholder="E-mail">
-                        <input type="text" placeholder="Пароль">
-                    </form>
-                    <span>
-                        <input type="checkbox" id="check">
-                        <label for="check">Запомнить меня</label>
-                    </span>
-                    <button class="btn" type="button">Войти</button>
-                    <span>
-                        <a href="#">Восстановить пароль</a>
-                        <a href="#">Регистрация</a>
-                    </span>
-                    
+            <div class="accaunt__inner">
+                <div class="tabs tabs-main-mobile tabs-main-mobile-1">
+                    <div class="tab-content">
+                        <div class="content__block block-1 active">
+                            <h4 class="hide-head">Личные данные</h4>
+                            <form action="">
+                                <input type="text" placeholder="ФИО*">
+                                <input type="text" placeholder="E-mail">
+                                <input type="text" placeholder="Номер телефона*">
+                                <input type="text" placeholder="Адрес доставки">
+                            </form>
+                            <div class="change-pass"><a href="#">Изменить пароль</a></div>
+                            <button class="btn">Сохранить</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+
 
 
 
@@ -239,7 +237,11 @@
     </footer>
 
 
-   
+
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="js/jquery.nice-number.js"></script>
     <script src="js/main.js"></script>
