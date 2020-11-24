@@ -1299,8 +1299,12 @@ footer {
     border-radius: 25px;
     max-width: 568px;
     width: 100%;
+    margin-left: 20px;
 }
 
+.contact__img img {
+    width: 100%;
+}
 
 .wrap {
     display: flex;
@@ -2075,7 +2079,9 @@ aside h5 {
     transition: all .3s;
   }
 
-  .row__info-add.active {
+  #show1.active,
+  #show2.active,
+  #show3.active {
       padding: 10px 0;
       height: auto;
   }
@@ -2090,14 +2096,14 @@ aside h5 {
       transition: all .3s;
   }
 
-  .info-add-name.active {
+  .row__info-add.active .info-add-name {
       height: auto;
       overflow: visible;
       padding-bottom: 11px;
       margin-bottom: 15px;
   }
 
-  .info-add-name.active:first-child{
+  .row__info-add.active .info-add-name:first-child{
     padding-bottom: 11px;
     border-bottom: 1px solid rgba(95, 95, 95, 0.57);
   }
@@ -2146,8 +2152,8 @@ aside h5 {
     overflow: hidden;
   }
 
-  .row__info-deliver.active,
-  .row__info-total.active {
+  .row__info-add.active .row__info-deliver,
+  .row__info-add.active .row__info-total {
     height: auto;
       overflow: visible;
       margin-bottom: 10px;
@@ -2591,13 +2597,18 @@ aside h5 {
 
   .login__inner2 .login {
       margin-right: 10px;
+      z-index: 50;
   }
 
 
 
 
-
-
+.main5 .star1:nth-child(1) {
+    left: 0;
+}
+.main5 .star4 {
+    right: 0;
+}
 
 
 
@@ -2692,6 +2703,29 @@ aside h5 {
     aside {
         width: 360px;
     }
+    .reviwes__block {
+        justify-content: space-evenly;
+    }
+    .rev-btns {
+        margin-right: 20px;
+        padding: 22px;
+        max-width: 300px;
+    }
+    .reviwes__text {
+        font-size: 19px;
+    }
+    .reviwes__item:nth-child(3) {
+        display: none;
+    }
+    .reviwes__block-main .slide__block {
+        justify-content: center;
+    }
+    .reviwes__container .slick-next::after {
+        width: 70px;
+    }
+    .reviwes__container .slick-prev::after {
+        width: 70px;
+    }
   }
 
 
@@ -2762,6 +2796,16 @@ aside h5 {
     }
     .catalog__list li a {
         font-size: 17px;
+    }
+    .contact-info {
+        font-size: 20px;
+    }
+    .login__inner2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .login__inner2 .login {
+        margin-bottom: 30px;
     }
   }
 
@@ -2913,6 +2957,20 @@ aside h5 {
     .catalog__wrapper .new__slide {
         max-width: 250px;
     }
+    .reviwes__all {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .reviwes__inner .rev-continue::before {
+        display: none;
+    }
+    .reviwes__inner .rev-continue {
+        display: none;
+    }
+    .all-review.rev-btns {
+        display: none;
+    }
   }
 
   @media (max-width: 950px) {
@@ -2935,7 +2993,7 @@ aside h5 {
         width: 100%;
         right: -15px;
         top: 74px;
-        z-index: 50;
+        z-index: 100;
         height: 0;
         transition: all .3s;
         overflow: hidden;
@@ -3066,6 +3124,18 @@ aside h5 {
         max-width: 100%;
         margin-top: 15px;
     }
+    .contact__item {
+        flex-direction: column-reverse;
+    }
+    .contact__item:nth-child(2) {
+        flex-direction: column;
+    }
+    .contact-info {
+        margin-bottom: 20px;
+    }
+    .contact__img {
+        margin-left: 0;
+    }
   }
 
 
@@ -3144,10 +3214,10 @@ aside h5 {
         display: flex !important;
         flex-wrap: wrap;
         width: 90% !important;
-        justify-content: center;
+        justify-content: flex-start;
     }
     .new__container .column .new__slide {
-        display: block;
+        display: block !important;
     }
     .new__container .slick-arrow {
         top: 101%;
@@ -3229,6 +3299,20 @@ aside h5 {
     }
     .page__control::before {
         left: 20%;
+    }
+    .login__inner2 .login {
+        padding: 20px 30px;
+    }
+    .login h3{
+        font-size: 38px;
+    }
+    .login p {
+        font-size: 19px;
+    }
+    .thanks-item {
+        padding: 30px;
+        font-size: 38px;
+        text-align: center;
     }
   }
 
@@ -3330,6 +3414,18 @@ aside h5 {
         width: 18px;
         height: 18px;
     }
+    #map {
+        height: 400px;
+    }
+    .delivery__text h4 {
+        font-size: 28px;
+    }
+    .delivery__text p {
+        font-size: 19px;
+    }
+
+
+    
   }
 
 
@@ -3401,6 +3497,85 @@ aside h5 {
     }
     .benefits__img span {
         height: 300px;
+    }
+    .reviwes__container .slick-prev {
+        right: 30%;
+    }
+    .rev-btns {
+        max-width: 280px;
+        padding: 18px;
+        font-size: 18px;
+    }
+    .reviwes__item .user .user__name {
+        font-size: 20px;
+    }
+    .reviwes__item .user span {
+        font-size: 16px;
+    }
+    .reviwes__text {
+        font-size: 16px;
+    }
+    .thanks-item {
+        padding: 25px;
+        font-size: 34px;
+        text-align: center;
+    }
+    .tabs{
+        display: none;
+    }
+    .tabs-main-mobile {
+        display: block !important;
+        z-index: 50;
+    }
+    .tabs-main-mobile .tab-header {
+        width: 100%;
+        border-radius: 25px;
+        height: 100%;
+    }
+    .tab__link a {
+        color: #000;
+    }
+    .tabs-main-mobile-x {
+        height: 400px;
+    }
+    .tabs-main-mobile .tab-header .user__name {
+        font-size: 18px;
+    }
+    .tabs-main-mobile .tab-header .user__info span {
+        font-size: 14px;
+    }
+    .tabs .tab-content > .content__block.active {
+        z-index: 50;
+    }
+    .tabs-main-mobile-1 {
+        height: 600px;
+    }
+
+    .tabs-main-mobile-2 {
+        height: auto;
+    }
+
+    .tabs-main-mobile-2 .tab-content .block-2 {
+        position: inherit;
+        z-index: 100;
+    }
+    .content__block h4 {
+        font-size: 26px;
+    }
+    .info__title {
+        font-size: 18px;
+    }
+    .row__info span {
+        font-size: 15px;
+    }
+    .row__info {
+        padding: 17px 9px;
+    }
+    .row__info-add {
+        font-size: 16px;
+    }
+    .row__info-total {
+        font-size: 18px;
     }
   }
 
@@ -3499,6 +3674,25 @@ aside h5 {
     .total-price {
         font-size: 28px;
     }
+    .block-1 form input {
+        font-size: 16px;
+        padding: 15px 23px 15px 25px;
+    }
+    .block-1 form input::placeholder {
+        font-size: 16px;
+    }
+    .block-1 .btn {
+        max-width: 300px;
+        padding: 19px;
+        font-size: 16px;
+    }
+    .change-pass a, .logout a {
+        font-size: 16px;
+    }
+    .content__block h4 {
+        font-size: 24px;
+    }
+   
   }
 
 
@@ -3508,7 +3702,7 @@ aside h5 {
         max-width: 200px;
     }
     .new__container .column{
-        max-width: 600px;
+        max-width: 505px;
     }
     .wrapper h3 {
         font-size: 40px;
@@ -3567,6 +3761,57 @@ aside h5 {
     .catalog__container {
         padding: 30px 15px;
     }
+    .btn {
+        padding: 17px;
+    }
+    .reviwes__item .user .user__name {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .reviwes__item .user {
+        margin-bottom: 12px;
+    }
+    .reviwes__container .slick-arrow{
+        width: 30px;
+        height: 30px;
+        bottom: -45px;
+    }
+    .reviwes__container .slick-arrow img {
+        width: 100%;
+    }
+    .reviwes__container .slick-prev::after {
+        content: '';
+        height: 2px;
+        width: 50px;
+        background-color: #464141;
+        position: absolute;
+        top: 14px;
+        left: 10px;
+    }
+    .reviwes__container .slick-next::after {
+        width: 50px;
+        top: 14px;
+        right: 10px;
+        background-color: #464141;
+    }
+    .rev-btns {
+        max-width: 220px;
+    }
+    .reviwes__item .user span {
+        font-size: 10px;
+    }
+    .reviwes__item .user .user__name {
+        font-size: 14px;
+    }
+    .reviwes__item .user .user__img {
+        width: 50px;
+        height: 50px;
+    }
+    .thanks-item {
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
   }
 
 
@@ -3577,9 +3822,7 @@ aside h5 {
     .header__right form {
         margin-right: 20px;
     }
-    .new__container .column{
-        max-width: 550px;
-    }
+    
     .login h3 {
         font-size: 34px;
     }
@@ -3645,6 +3888,38 @@ aside h5 {
     .page__control::before {
         left: 15%;
     }
+
+    .tabs-main-mobile-2 .tab-content .block-2 {
+        padding: 20px 20px 40px;
+    }
+    .info__title {
+        font-size: 15px;
+    }
+    .row__info span {
+        font-size: 11px;
+    }
+    .row__info span:nth-child(1)::before {
+        width: 14px;
+        height: 14px;
+    }
+    .row__info {
+        padding: 9px;
+    }
+    .row__info-add {
+        font-size: 14px;
+    }
+    .row__info-total {
+        font-size: 14px;
+    }
+    .info-add-name span {
+        max-width: 260px;
+    }
+    .info-add-name p {
+        margin-left: 25px;
+    }
+    .info-add-name p span {
+        white-space: nowrap;
+    }
   }
 
 
@@ -3683,6 +3958,14 @@ aside h5 {
     }
     .new__container {
         width: 400px;
+    }
+    .rev-btns {
+        font-size: 14px;
+        padding: 14px;
+        max-width: 200px;
+    }
+    .reviwes__block {
+        margin-bottom: 15px;
     }
 }
 
@@ -3759,6 +4042,13 @@ aside h5 {
     .catalog__wrapper {
         justify-content: center;
     }
+    .login__inner2 .login {
+        padding: 18px;
+    }
+    .login span label a {
+        font-size: 17px;
+    }
+
   }
 
   @media (max-width: 475px) {
@@ -3846,6 +4136,25 @@ aside h5 {
     .new__container {
         width: 400px;
     }
+    .reviwes__block-main .slide__block {
+        flex-direction: column;
+        align-items: center;
+    }
+    .row__info-add {
+        font-size: 11px;
+    }
+    .info__title {
+        font-size: 13px;
+    }
+    .row__info span:nth-child(1)::before {
+        left: -5px;
+    }
+    .tabs-main-mobile-2 .tab-content .block-2 {
+        padding: 10px 10px 20px;
+    }
+    .info-add-name {
+        padding: 0px 8px;
+    }
   }
 
   @media (max-width: 430px) {
@@ -3857,7 +4166,7 @@ aside h5 {
         right: 15px;
     }
     .new__container .column{
-        max-width: 395px;
+        max-width: 330px;
     }
     .marker {
         width: 40px;
@@ -3908,12 +4217,27 @@ aside h5 {
     .subtitle {
         font-size: 18px;
     }
+    .reviwes__container .slick-prev::after {
+       width: 30px;
+      
+    }
+    .reviwes__container .slick-next::after {
+        width: 30px;
+    }
+    .reviwes__container .slick-arrow {
+        bottom: -35px;
+    }
+    .reviwes__container .slick-prev {
+        right: 23%;
+    }
+    .reviwes__block-main .slide__block {
+        padding: 10px;
+    }
   }
 
   @media (max-width: 418px) {
     
     .new__container .column {
-        max-width: 380px;
         justify-content: center;
     }
     .new__container .new__slide {
@@ -3980,6 +4304,24 @@ aside h5 {
     }
     .total__order span {
         font-size: 16px;
+    }
+    .login__inner2 .login span {
+        flex-direction: column;
+    }
+    .login h3 {
+        text-align: center;
+        line-height: 33px;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    .login__inner .btn {
+        padding: 15px;
+    }
+    .login form input {
+        padding: 15px 20px;
+    }
+    .reviwes__all-item {
+        font-size: 14px;
     }
   }
 
@@ -4102,6 +4444,27 @@ aside h5 {
     .aside__list {
         max-width: 250px;
     }
+    #map {
+        height: 321px;
+    }
+    .contact-info p {
+        font-size: 17px;
+    }
+    .contact-info {
+        font-size: 19px;
+    }
+    .delivery__text h4 {
+        font-size: 24px;
+    }
+    .delivery__text p {
+        font-size: 17px;
+    }
+    .login span label a{
+        font-size: 14px;
+    }
+    .rev-btns {
+        max-width: 160px;
+    }
   }
 
 
@@ -4110,9 +4473,7 @@ aside h5 {
     .slider__container, .slide {
         height: 190px !important;
     }
-    .new__container .column {
-        max-width: 300px;
-    }
+    
     .new__slide {
         margin: 20px 20px;
     }
@@ -4134,10 +4495,13 @@ aside h5 {
     .new__slide-x {
         margin: 20px 40px !important;
     }
+    .contact-info p {
+        font-size: 15px;
+    }
   }
 
   @media (max-width: 320px) {
     .new__container .column {
-        max-width: 290px;
+        max-width: 335px;
     }
   }
