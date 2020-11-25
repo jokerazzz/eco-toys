@@ -146,6 +146,13 @@ $('.reviwes__container').slick({
   nextArrow:'<button class="slick-next" type="button"><img src="images/main/arrow-right.png" alt=""></button>'
 });
 
+$('.wrap1').slick({
+  slidesToShow:1,
+  prevArrow:'<button class="slick-prev" type="button"><img src="images/main/arrow-left.png" alt=""></button>',
+  nextArrow:'<button class="slick-next" type="button"><img src="images/main/arrow-right.png" alt=""></button>',
+  loop:true,
+});
+
 $('.clients__container').slick({
   slidesToShow:2,
   prevArrow:'<button class="slick-prev" type="button"><img src="images/main/arrow-left.png" alt=""></button>',
