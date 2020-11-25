@@ -1,7 +1,7 @@
 var swiper = new Swiper('.swiper-container', {
     slidesPerView: 4,
     loop: true,
-    spaceBetween: 20,
+    spaceBetween: 30,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -12,8 +12,9 @@ var swiper = new Swiper('.swiper-container', {
             slidesPerView: 1,
             // slidesPerColumn: 1,
             // slidesPerGroup:1,
-            // slidesPerColumnFill: 'row',
+            slidesPerColumnFill: 'row',
             loop: true,
+            spaceBetween: 30,
         },
         420: {
             slidesPerView: 2,

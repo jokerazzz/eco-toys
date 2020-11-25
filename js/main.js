@@ -73,6 +73,8 @@ $('.new__container').slick({
   slidesToScroll:1,
   prevArrow:'<button class="slick-prev" type="button"><img src="images/main/arrow-white-left.png" alt=""></button>',
   nextArrow:'<button class="slick-next" type="button"><img src="images/main/arrow-white-right.png" alt=""></button>',
+  centerMode: true,
+  loop: true,
   responsive: [
     
     {

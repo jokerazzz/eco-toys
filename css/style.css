@@ -563,11 +563,14 @@ footer {
     font-weight: 600;
     margin-bottom: 10px;
 }
+.footer__link ul li {
+    margin-bottom: 12px;
+}
 
 .footer__link ul li a {
     font-size: 18px;
     color: #202020;
-    margin-bottom: 12px;
+    
     display: inline-block;
 }
 
@@ -1515,6 +1518,11 @@ footer {
     margin: 60px 0;
 }
 
+.new__slide2 {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
 .marker {
     font-size: 14px !important;
     text-transform: uppercase;
@@ -1863,7 +1871,7 @@ aside h5 {
 
 
 .tabs {
-    height:706px;
+    height:800px;
     background:#fff;
     box-shadow: 10px 9px 24px rgba(0, 0, 0, 0.22);
     border-radius: 25px;
@@ -2042,6 +2050,7 @@ aside h5 {
       justify-content: space-between;
       padding: 27px 10px;
       border-bottom: 1px solid rgba(95, 95, 95, 0.57);
+      background-color: #fff;
   }
 
   .row__info  span:nth-child(1) {
@@ -2073,7 +2082,7 @@ aside h5 {
   }
 
   .row__info-add {
-    background: rgba(186, 222, 137, 0.5);
+    background: rgba(186, 222, 137, 1);
     padding: 0;
     font-size: 18px;
     height: 0;
@@ -2983,6 +2992,9 @@ aside h5 {
     .all-review.rev-btns {
         display: none;
     }
+    .row__info span:nth-child(1)::before{ 
+        display: none;
+    }
   }
 
   @media (max-width: 950px) {
@@ -3295,6 +3307,7 @@ aside h5 {
     }
     .new__slide2 {
         display: block !important;
+        
     }
     .page__control::after {
         right: 20%;
